@@ -1,15 +1,22 @@
-
-app.post('/checkout', (req, res) => {
-    // Logic to process the checkout (submitting the order)
+// Create Order
+app.post('/orders', (req, res) => {
+    // Logic 
 });
 
-// Order History
-app.get('/orders', (req, res) => {
-    // Logic to retrieve and render the user's order history
-});
-
-// Order Details
-app.get('/orders/:orderId', (req, res) => {
+// Read Order
+app.get('orders/:orderId', (req, res) => {
     const orderId = req.params.orderId;
-    // Logic to retrieve and render details of a specific order
+    // Logic 
+});
+
+// Update Order
+app.put('/orders/:orderId', (req, res) => {
+    const orderId = req.params.orderId;
+    // Logic 
+});
+
+// Delete Order
+app.delete('/orders/:orderId', (req, res) => {
+    const orderId = req.params.orderId;
+    // Logic to delete the order with the specified orderId
 });

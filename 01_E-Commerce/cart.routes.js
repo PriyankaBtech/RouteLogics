@@ -1,6 +1,30 @@
+// Read Cart
+app.get('/cart/:userId/items', (req, res) => {
+    const userId = req.params.userId;
+    // Logic 
+});
+
+// Update Cart Item Quantity
+app.put('/cart/:userId/items/:itemId', (req, res) => {
+    const userId = req.params.userId;
+    const itemId = req.params.itemId;
+    // Logic 
+});
+
+// Remove Item from Cart
+app.delete('/cart/:userId/items/:itemId', (req, res) => {
+    const userId = req.params.userId;
+    const itemId = req.params.itemId;
+    // Logic 
+});
+
+
+/************************************************************************/
+
+
 // Add Product to Cart
 app.post('/cart/add', (req, res) => {
-    // Logic to add a product to the user's shopping cart
+    // Logic
 });
 
 

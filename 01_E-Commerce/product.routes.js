@@ -1,18 +1,29 @@
-// Homepage
-app.get('/', (req, res) => {
-    res.send('Welcome to our e-commerce store!');
+
+// Create Product
+app.post('/products', (req, res) => {
+    // Logic 
 });
 
-// Product Listings
-app.get('/products', (req, res) => {
-    // Logic to retrieve and render list of products
-});
-
-// Product Details
+// Read Product
 app.get('/products/:productId', (req, res) => {
     const productId = req.params.productId;
-    // Logic to retrieve and render details of product with productId
+    // Logic 
 });
+
+// Update Product
+app.put('/products/:productId', (req, res) => {
+    const productId = req.params.productId;
+    // Logic 
+});
+
+// Delete Product
+app.delete('/products/:productId', (req, res) => {
+    const productId = req.params.productId;
+    // Logic 
+});
+
+
+/*********************************************************************/
 
 // Product Reviews
 app.get('/products/:productId/reviews', (req, res) => {
